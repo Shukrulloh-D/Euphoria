@@ -1,0 +1,8 @@
+.wrap { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - 90px); }
+.left { padding: 60px 80px; display: flex; flex-direction: column; justify-content: center; max-width: 600px; }
+.right { background: url('https://picsum.photos/seed/check-email-girls/900/1200') center/cover; }
+.title { font-size: 32px; font-weight: 800; margin-bottom: 20px; }
+.sub { color: var(--gray); font-size: 14px; line-height: 1.7; margin-bottom: 24px; }
+.sub a { color: var(--primary); font-weight: 600; }
+.bottom { color: var(--gray); font-size: 14px; }
+@media (max-width: 900px) { .wrap { grid-template-columns: 1fr; } .right { display: none; } }

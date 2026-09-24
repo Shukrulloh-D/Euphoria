@@ -1,0 +1,21 @@
+.title { font-size: 24px; font-weight: 800; margin-bottom: 32px; }
+.section { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+.contact { margin-bottom: 48px; }
+.row { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: var(--gray-light); border-radius: var(--radius-sm); margin-bottom: 8px; transition: all 0.2s; }
+.row:hover { background: var(--primary-light); }
+.label { font-size: 12px; color: var(--gray); margin-bottom: 4px; }
+.value { font-size: 15px; font-weight: 500; }
+.change { color: var(--primary); font-weight: 600; font-size: 13px; }
+.change:hover { text-decoration: underline; }
+.addrHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.addrGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.card { padding: 24px; border-radius: var(--radius); background: var(--gray-light); transition: all 0.2s; }
+.card:hover { background: var(--primary-light); }
+.cardName { font-weight: 700; margin-bottom: 4px; }
+.cardPhone { font-size: 13px; color: var(--gray); margin-bottom: 12px; }
+.cardAddr { font-size: 13px; color: var(--gray); line-height: 1.5; margin-bottom: 16px; }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.tag { padding: 4px 10px; background: white; border-radius: 4px; font-size: 11px; font-weight: 500; }
+.cardActions { display: flex; gap: 16px; font-size: 12px; color: var(--primary); }
+.cardActions button:hover { text-decoration: underline; }
+@media (max-width: 900px) { .addrGrid { grid-template-columns: 1fr; } }

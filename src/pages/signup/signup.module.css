@@ -1,0 +1,18 @@
+.wrap { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - 90px); background: white; }
+.left { padding: 60px 80px; display: flex; flex-direction: column; justify-content: center; max-width: 600px; }
+.right { background: url('https://picsum.photos/seed/signup-yellow/900/1200') center/cover; }
+.title { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+.sub { color: var(--gray); font-size: 14px; margin-bottom: 32px; }
+.oauth { display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+.oauthBtn { padding: 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 500; font-size: 14px; transition: all 0.2s; }
+.oauthBtn:hover { border-color: var(--dark); background: var(--gray-light); }
+.form { display: flex; flex-direction: column; gap: 20px; }
+.label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+.passwordRow { display: flex; justify-content: space-between; align-items: center; }
+.hide { font-size: 12px; color: var(--gray); }
+.error { color: var(--red); font-size: 13px; margin-top: 4px; }
+.check { display: flex; gap: 10px; font-size: 13px; align-items: flex-start; line-height: 1.5; }
+.check a { color: var(--primary); font-weight: 500; }
+.bottom { text-align: center; font-size: 14px; color: var(--gray); margin-top: 16px; }
+.bottom a { color: var(--primary); font-weight: 600; }
+@media (max-width: 900px) { .wrap { grid-template-columns: 1fr; } .right { display: none; } .left { padding: 40px 24px; } }
