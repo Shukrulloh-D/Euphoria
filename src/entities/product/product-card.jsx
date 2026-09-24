@@ -1,6 +1,6 @@
-import { HeartIcon } from 'shared/ui/icon';
-import { useWishlist } from 'shared/lib/wishlist';
-import styles from './product-card.module.css';
+import { HeartIcon } from "shared/ui/icon";
+import { useWishlist } from "shared/lib/wishlist";
+import styles from "./product-card.module.css";
 
 export const ProductCard = ({ product, onClick }) => {
   const { has, toggle } = useWishlist();
@@ -11,8 +11,11 @@ export const ProductCard = ({ product, onClick }) => {
       <div className={styles.imgWrap}>
         <img src={product.image} alt={product.title} />
         <button
-          className={`${styles.wish} ${liked ? styles.active : ''}`}
-          onClick={(e) => { e.stopPropagation(); toggle(product.id); }}
+          className={`${styles.wish} ${liked ? styles.active : ""}`}
+          onClick={(e) => {
+            e.stopPropagation();
+            toggle(product.id);
+          }}
         >
           <HeartIcon size={16} filled={liked} />
         </button>

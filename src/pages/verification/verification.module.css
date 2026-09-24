@@ -1,7 +1,40 @@
-.wrap { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - 90px); }
-.left { padding: 60px 80px; display: flex; flex-direction: column; justify-content: center; max-width: 600px; }
-.right { background: url('https://picsum.photos/seed/verification-girl/900/1200') center/cover; }
-.title { font-size: 32px; font-weight: 800; margin-bottom: 12px; }
-.sub { color: var(--gray); font-size: 14px; margin-bottom: 32px; }
-.label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 8px; }
-@media (max-width: 900px) { .wrap { grid-template-columns: 1fr; } .right { display: none; } }
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 90px);
+}
+.left {
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+.right {
+  background: url("https://picsum.photos/seed/euphoria-905/900/1200")
+    center/cover;
+}
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.sub {
+  color: var(--gray);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+@media (max-width: 900px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+  .right {
+    display: none;
+  }
+}

@@ -1,8 +1,56 @@
-.wrap { display: grid; grid-template-columns: 1fr 1fr; max-width: 1440px; margin: 60px auto; padding: 0 60px; min-height: 420px; }
-.left { background: #2C4B44; padding: 60px; display: flex; flex-direction: column; justify-content: center; color: white; position: relative; overflow: hidden; }
-.left::before { content: ''; position: absolute; inset: 0; background: url('https://picsum.photos/seed/leaves/800/600') center/cover; opacity: 0.15; }
-.leftContent { position: relative; z-index: 1; max-width: 380px; }
-.leftContent h3 { font-size: 34px; font-weight: 800; line-height: 1.15; margin-bottom: 20px; }
-.leftContent p { font-size: 14px; line-height: 1.7; margin-bottom: 32px; opacity: 0.9; }
-.right { background: url('https://picsum.photos/seed/brandpeople/800/600') center/cover; }
-@media (max-width: 900px) { .wrap { grid-template-columns: 1fr; padding: 0 20px; } .right { min-height: 300px; } }
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  margin: 60px auto;
+  padding: 0 60px;
+  min-height: 420px;
+}
+.left {
+  background: #2c4b44;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.left::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://picsum.photos/seed/euphoria-801/800/600")
+    center/cover;
+  opacity: 0.15;
+}
+.leftContent {
+  position: relative;
+  z-index: 1;
+  max-width: 380px;
+}
+.leftContent h3 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.leftContent p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+.right {
+  background: url("https://picsum.photos/seed/euphoria-801/800/600")
+    center/cover;
+}
+@media (max-width: 900px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  .right {
+    min-height: 300px;
+  }
+}

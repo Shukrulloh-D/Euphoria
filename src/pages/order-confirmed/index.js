@@ -1,1 +1,1 @@
-export * from './order-confirmed';
+export * from "./order-confirmed";
